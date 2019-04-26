@@ -1,6 +1,7 @@
 :- use_module(library(clpfd)).
 :- use_module(library(edcg)).
 :- use_module(position).
+:- use_module(cond).
 
 % utility function to construct seg from list
 % should go in main.pl
@@ -67,9 +68,9 @@ listZone([X1, Y1, X2, Y2], zone(coor(X1, Y1), coor(X2, Y2))).
         %bottomCoor(CoorDeb, CoorFin, CoorBottom),
         %zoneAroundCoor(CoorBottom, Zone).
 
-% conditional operator
-% should go in cond.pl
-noCond(_).
+%% conditional operator
+%% should go in cond.pl
+%noCond(_).
 
 % check if either end point of a seg is in the cursor zone
 % should go dmos.pl
