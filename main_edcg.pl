@@ -1,4 +1,4 @@
-:- use_module(carre).
+:- use_module(carre_edcg).
 
 % utility function to construct seg from list
 % should go in main.pl

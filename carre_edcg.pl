@@ -3,7 +3,7 @@
 :- use_module(library(edcg)).
 :- use_module(position).
 :- use_module(cond).
-:- use_module(epf).
+:- use_module(epf_edcg).
 
 edcg:pred_info(carre, 1, [cursor, dcg]).
 
