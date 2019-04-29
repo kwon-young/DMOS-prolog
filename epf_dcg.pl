@@ -1,4 +1,7 @@
 :- module(epf, [at//3, at//4, term_seg//4]).
+:- meta_predicate at(4, ?, ?, ?, ?).
+:- meta_predicate at(5, ?, ?, ?, ?, ?).
+:- meta_predicate term_seg(5, ?, ?, ?, ?, ?).
 
 :- use_module(dmos).
 

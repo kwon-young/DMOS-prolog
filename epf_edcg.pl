@@ -1,4 +1,7 @@
 :- module(epf, [at/5, at/6, term_seg/6]).
+:- meta_predicate at(4, ?, ?, ?, ?).
+:- meta_predicate at(5, ?, ?, ?, ?, ?).
+:- meta_predicate term_seg(5, ?, ?, ?, ?, ?).
 
 :- use_module(library(edcg)).
 :- use_module(dmos).
