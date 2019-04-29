@@ -5,6 +5,7 @@
 
 % EPF grammar operator
 % should go in epf.pl
+:- multifile edcg:pred_info/3.
 edcg:acc_info(cursor, X, _In, X, true).
 edcg:pred_info(at, 1, [cursor, dcg]).
 edcg:pred_info(at, 2, [cursor, dcg]).
