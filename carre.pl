@@ -3,9 +3,9 @@
 :- use_module(library(edcg)).
 :- use_module(position).
 :- use_module(cond).
-:- use_module(epf_edcg).
+:- use_module(epf).
 
-edcg:pred_info(carre, 1, [cursor, dcg]).
+edcg:pred_info(carre, 1, [structure, cursor]).
 
 % this grammar rule describe how a square should look like
 % should be in carre.pl
@@ -17,10 +17,11 @@ edcg:pred_info(carre, 1, [cursor, dcg]).
 %       ------
 %        Seg3
 carre([Seg1, Seg2, Seg3, Seg4]) -->>
-        term_seg(noCond, Seg1),
+        at_abs(pageEntiere),
+        term_seg(condSegH, noCond, seg_carre, Seg1),
         at(rightOfSeg, Seg1),
-        term_seg(noCond, Seg2),
+        term_seg(condSegV, noCond, seg_carre, Seg2),
         at(bottomOfSeg, Seg2),
-        term_seg(noCond, Seg3),
+        term_seg(condSegH, noCond, seg_carre, Seg3),
         at(leftOfSeg, Seg3),
-        term_seg(noCond, Seg4).
+        term_seg(condSegV, noCond, seg_carre, Seg4).
