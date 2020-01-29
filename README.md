@@ -8,7 +8,7 @@ The documentation was made using the `pldoc` library and by following this [tuto
 
 Launch the documentation server using the `debug.pl` script:
 
-```bash
+```
 $ swipl
 Welcome to SWI-Prolog (threaded, 64 bits, version 8.0.3)
 SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
@@ -30,4 +30,4 @@ true.
 
 ## Packaging information
 
-[](https://www.swi-prolog.org/howto/Pack.html)
+https://www.swi-prolog.org/howto/Pack.html
